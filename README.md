@@ -10,6 +10,6 @@
 3. If you have 128 bit answer, run test_128.sh:  
 `chmod +x test_128.sh && ./test_128.sh`  
 4. If you have 256 bit answer:  
-`chmod +x test_256.sh &&./test_256.sh`
+`chmod +x test_256.sh && ./test_256.sh`
 
 ## Have fun!
