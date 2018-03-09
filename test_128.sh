@@ -1,10 +1,9 @@
 #!/bin/bash
 echo Testing ./mul
 time=$(date +%s%N | cut -b1-13)
-for number in {1..32}
+for number in {1..36}
 do
     result=$(python3 generate.py $number| ./mul)
-
     for line in $(cat test.txt) 
     do
         if [[ "$line" == "$result" ]]; then

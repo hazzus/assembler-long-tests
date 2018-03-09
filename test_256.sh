@@ -1,9 +1,9 @@
 #!/bin/bash
 echo Testing ./mul
 time=$(date +%s%N | cut -b1-13)
-for number in {1..64}
+for number in {1..68}
 do
-    result=$(python3 generate.py $number| ./mul)
+    result=$(python3 generate.py $number| ./mul256)
 
     for line in $(cat test.txt) 
     do
