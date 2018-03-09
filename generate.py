@@ -4,8 +4,8 @@ import sys
 test_number = int(sys.argv[1])
 if test_number >= 5:
     test_number -= 4
-    x = random.randint(0, 2**(128*test_number))
-    y = random.randint(0, 2**(128*test_number))
+    x = random.randint(2**(128 * (test_number - 1)) - 1, 2**(128*test_number) - 1)
+    y = random.randint(2**(128 * (test_number - 1)) - 1, 2**(128*test_number) - 1)
 elif test_number == 1:
     x = 1
     y = 2**200
